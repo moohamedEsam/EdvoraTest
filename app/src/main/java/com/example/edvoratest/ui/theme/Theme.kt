@@ -28,12 +28,9 @@ private val LightColorPalette = lightColors(
 )
 
 @Composable
-fun EdvoraTestTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-    val colors = if (darkTheme) {
-        DarkColorPalette
-    } else {
-        LightColorPalette
-    }
+fun EdvoraTestTheme(content: @Composable () -> Unit) {
+    val colors = DarkColorPalette
+
 
     MaterialTheme(
         colors = colors,
